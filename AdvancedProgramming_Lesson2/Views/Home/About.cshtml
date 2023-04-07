@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@using Microsoft.AspNetCore.Localization;
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@{ ViewData["Title"] = SharedLocalizer["About"]; }
+
+<h1>Sebastian Reguła</h1>
+<h2>@SharedLocalizer["AlbumNumber"]: 129926</h2>
+<h2>@SharedLocalizer["Group"]: 21_Inf_ST_4</h2>
